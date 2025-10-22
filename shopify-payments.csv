@@ -1,0 +1,3 @@
+Transaction Date,Type,Order,Card Brand,Card Source,Payout Status,Payout Date,Available On,Amount,Fee,Net,Checkout,Payment Method Name,Presentment Amount,Presentment Currency,Currency,VAT
+2025-09-30 21:59:35 +0200,charge,#1082,master,online,paid,2025-10-03,2025-10-03,342.00,7.32,334.68,#66885141659983,card,342.00,SEK,SEK,0.00
+2025-09-30 21:55:33 +0200,charge,#1081,master,online,paid,2025-10-03,2025-10-03,622.80,11.81,610.99,#66885104664911,card,622.80,SEK,SEK,0.00
