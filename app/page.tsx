@@ -31,10 +31,15 @@ export default function Home() {
   const [progress, setProgress] = useState<number>(0);
 
   const year = new Date().getFullYear();
-  const settingsRaw = window.localStorage.getItem("sie-settings");
+
+  const thing =
+    typeof window !== "undefined"
+      ? window.localStorage.getItem("sie-settings")
+      : null;
+  const settingsRaw = thing ? JSON.parse(thing) : null;
   const [settings, setSettingsReal] = useState<Settings>(
     settingsRaw
-      ? JSON.parse(settingsRaw)
+      ? settingsRaw
       : {
           companyName: "",
           orgNumber: "",
@@ -54,7 +59,9 @@ export default function Home() {
         }
   );
   const setSettings = (settings: Settings) => {
-    window.localStorage.setItem("sie-settings", JSON.stringify(settings));
+    if (typeof window !== "undefined") {
+      window.localStorage.setItem("sie-settings", JSON.stringify(settings));
+    }
     setSettingsReal(settings);
   };
 
