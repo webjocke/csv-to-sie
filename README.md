@@ -1,6 +1,8 @@
 ## CSV → SIE (Shopify Payments to Fortnox)
 
-Convert a Shopify Payments transactions export (CSV) into a Fortnox‑compatible SIE file (type 4). Runs fully in your browser. No data leaves your machine. Noting is saved in the cloud.
+Convert a Shopify Payments transactions export (CSV) into a Fortnox‑compatible SIE file (type 4). Runs fully in your browser. No data leaves your machine. Nothing is saved in the cloud.
+
+See it in action at [csv-till-sie.joakimjohansson.se](https://csv-till-sie.joakimjohansson.se)
 
 Created by [Joakim Johansson](https://joakimjohansson.se).
 
