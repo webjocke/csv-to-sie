@@ -191,6 +191,27 @@ export default function Home() {
             </Button>
             {progress > 0 && <Progress className="h-2 w-48" value={progress} />}
           </div>
+          <div className="text-sm text-muted-foreground">
+            Skapad av{" "}
+            <a
+              href="https://joakimjohansson.se"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-500 hover:text-blue-600"
+            >
+              Joakim Johansson
+            </a>{" "}
+            med källkod tillgänglig på{" "}
+            <a
+              href="https://github.com/webjocke/csv-to-sie"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-500 hover:text-blue-600"
+            >
+              GitHub
+            </a>
+            .
+          </div>
         </CardContent>
       </Card>
       {/* No separate preview below anymore; included inside main card's dropzone */}

@@ -14,7 +14,7 @@ export function buildSieFile(
 ) {
   const header = [
     `#FLAGGA 0`,
-    `#PROGRAM "Shopify→Fortnox SIE" "v0.1"`,
+    `#PROGRAM "ShopifyFortnoxConverter" "v0.1"`,
     `#FORMAT PC8`,
     `#GEN ${todayYmd()} "${escapeSie(
       settings.authorName || "ShopifyFortnoxConverter"

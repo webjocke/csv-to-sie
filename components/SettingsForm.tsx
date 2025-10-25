@@ -88,13 +88,17 @@ export function SettingsForm({ value, onChange }: Props) {
         fiscalYearEnd: normalizeYmd(d.fiscalYearEnd),
         vatRatePercent: Number(d.vatRatePercent) || 0,
         voucherSeries: d.voucherSeries || "A",
+        accounts: {
+          bankAccount: d.accounts.bankAccount || "1930",
+          salesAccount: d.accounts.salesAccount || "3001",
+          outputVatAccount: d.accounts.outputVatAccount || "2611",
+          feesAccount: d.accounts.feesAccount || "6570",
+        },
       };
-
       if (areSettingsEqual(next, value)) return;
       onChange(next);
     });
     return () => subscription.unsubscribe();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [form.watch, onChange]);
 
   // One-time hydration from persisted values, then let RHF own the state
